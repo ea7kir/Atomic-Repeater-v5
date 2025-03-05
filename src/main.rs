@@ -1,8 +1,6 @@
-// config::read();
-// for entry in glob("media/slides/*.png")? {
-//     println!("{}", entry?.display());
-// }
+// Atomic-Repeater-v5 - rust version
 
+use glob;
 use serde::{Deserialize, Serialize};
 use toml;
 
@@ -115,4 +113,13 @@ fn main() {
 
     let toml_str = toml::to_string(&config).unwrap();
     println!("{}", toml_str);
+
+    // TODO: implement config read & write in a module
+
+    // TODO: implement carousel algorithm
+    // read list of slide
+    // config::read();
+    for entry in glob("../media/slides/*.png")? {
+        println!("{}", entry?.display());
+    }
 }
