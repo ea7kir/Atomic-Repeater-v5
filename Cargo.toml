@@ -1,0 +1,10 @@
+[package]
+name = "atomic-repeater-v5"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+glob = "0.3.2"
+serde = { version = "1.0.218", features = ["derive"] }
+toml = "0.8.20"
+
